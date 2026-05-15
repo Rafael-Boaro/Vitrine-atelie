@@ -1,3 +1,5 @@
+//Futuramente ainda irei implementar está funcionalidade no site!
+
 import { create } from 'zustand';
 
 // 1. Definindo as opções disponíveis (Tipagem estática)
