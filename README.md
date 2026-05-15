@@ -1,4 +1,4 @@
-content = """# Ateliê da Paula - Vitrine Digital 🎨👶
+# Ateliê da Paula - Vitrine Digital 🎨👶
 
 O projeto do Ateliê da Paula já está em produção! A vitrine digital foi implantada com sucesso e pode ser acessada em tempo real através do link abaixo:
 
@@ -69,5 +69,5 @@ Para baixar e rodar o código-fonte em sua máquina local para futuras manutenç
 * **Otimização de Imagens**: Para manter a performance no Netlify, utilize imagens no formato `.webp` sempre que possível.
 """
 
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(content)
+Na pasta src/store temos um código chamado useBabyStore.ts, ele será uma futura implementação que planejo no site...
+
