@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+<h1 align="center">🍼 Ateliê da Paula - Vitrine Reborn</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite" />
+  <img src="https://img.shields.io/badge/Zustand-443E38?style=for-the-badge&logo=react&logoColor=white" alt="Zustand" />
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  Uma vitrine virtual responsiva e de alta performance desenvolvida para um ateliê de arte Reborn. O projeto foca em conversão, usabilidade e na apresentação imersiva do portfólio.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  <a href="#-sobre-o-projeto">Sobre</a> •
+  <a href="#-arquitetura-e-decisões-técnicas">Arquitetura</a> •
+  <a href="#-funcionalidades">Funcionalidades</a> •
+  <a href="#-como-executar">Como Executar</a>
+</p>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Sobre o Projeto
 
-## Expanding the ESLint configuration
+O **Ateliê da Paula** é uma Single Page Application (SPA) construída para conectar o trabalho artesanal da artista com clientes em potencial. A interface foi desenhada para transmitir delicadeza e profissionalismo, utilizando uma paleta de cores acolhedora e tipografia moderna.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A aplicação direciona ativamente o fluxo do usuário para a conversão via WhatsApp, utilizando mensagens pré-formatadas para facilitar o primeiro contato.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠 Arquitetura e Decisões Técnicas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Este projeto foi construído com foco em escalabilidade e performance, adotando padrões de mercado:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   **Tipagem Estrita:** Uso intensivo de `TypeScript` com interfaces definidas (ex: `BebeReborn`) para garantir a integridade dos dados e evitar erros em tempo de execução.
+*   **Performance (LCP Otimizado):** Implementação de `loading="lazy"` nas imagens do portfólio para adiar o carregamento de recursos pesados, garantindo um tempo de resposta inicial ultrarrápido.
+*   **Estilização Utilitária:** `Tailwind CSS` para um desenvolvimento ágil e responsivo, mantendo o bundle CSS final extremamente leve.
+*   **Gerenciamento de Estado Global:** Configuração da store com `Zustand` (`useBabyStore.ts`) para lidar com opções de customização e regras de negócio de forma simples e livre de *prop drilling*.
+*   **Componentização:** Divisão semântica da interface em componentes isolados (`Header`, `Hero`, `Galeria`, `Enxoval`, `Cuidados`), facilitando a manutenção e a legibilidade do código.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [x] Portfólio dinâmico com grid responsivo.
+- [x] Navegação por *Smooth Scroll* integrada.
+- [x] Integração direta com a API do WhatsApp para orçamentos.
+- [x] Interface 100% responsiva (Mobile-first approach).
+- [x] Efeitos de microinteração (hover, scale) para melhor feedback visual.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Como Executar
+
+### Pré-requisitos
+
+Antes de começar, você precisará ter o [Node.js](https://nodejs.org/en/) (versão 18+ recomendada) instalado em sua máquina.
+
+### Passos
+
+1. Clone este repositório:
+    ```bash
+    git clone [https://github.com/Rafael-Boaro/Vitrine-atelie.git](https://github.com/Rafael-Boaro/Vitrine-atelie.git
+
+2. Acesse a pasta do projeto:
+
+    ```bash
+    cd Vitrine-atelie
+    
+3. Instale as dependências:
+
+    ```bash
+    npm install
+4. Execute o servidor de desenvolvimento:
+
+    ```bash
+    npm run dev
+O servidor iniciará localmente. Acesse a URL indicada no terminal.
