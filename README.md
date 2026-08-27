@@ -1,4 +1,4 @@
-<h1 align="center">🍼 Ateliê da Paula - Vitrine Reborn</h1>
+                    <h1 align="center"> Ateliê da Paula - Vitrine Reborn</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -21,13 +21,13 @@
 
 ---
 
-## 💻 Sobre o Projeto
+## Sobre o Projeto
 
 O **Ateliê da Paula** é uma Single Page Application (SPA) construída para conectar o trabalho artesanal da artista com clientes em potencial. A interface foi desenhada para transmitir delicadeza e profissionalismo, utilizando uma paleta de cores acolhedora e tipografia moderna.
 
 A aplicação direciona ativamente o fluxo do usuário para a conversão via WhatsApp, utilizando mensagens pré-formatadas para facilitar o primeiro contato.
 
-## 🛠 Arquitetura e Decisões Técnicas
+## Arquitetura e Decisões Técnicas
 
 Este projeto foi construído com foco em escalabilidade e performance, adotando padrões de mercado:
 
@@ -37,37 +37,10 @@ Este projeto foi construído com foco em escalabilidade e performance, adotando 
 *   **Gerenciamento de Estado Global:** Configuração da store com `Zustand` (`useBabyStore.ts`) para lidar com opções de customização e regras de negócio de forma simples e livre de *prop drilling*.
 *   **Componentização:** Divisão semântica da interface em componentes isolados (`Header`, `Hero`, `Galeria`, `Enxoval`, `Cuidados`), facilitando a manutenção e a legibilidade do código.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - [x] Portfólio dinâmico com grid responsivo.
 - [x] Navegação por *Smooth Scroll* integrada.
 - [x] Integração direta com a API do WhatsApp para orçamentos.
 - [x] Interface 100% responsiva (Mobile-first approach).
 - [x] Efeitos de microinteração (hover, scale) para melhor feedback visual.
-
-## 🚀 Como Executar
-
-### Pré-requisitos
-
-Antes de começar, você precisará ter o [Node.js](https://nodejs.org/en/) (versão 18+ recomendada) instalado em sua máquina.
-
-### Passos
-
-1. Clone este repositório:
-    ```bash
-    git clone [https://github.com/Rafael-Boaro/Vitrine-atelie.git](https://github.com/Rafael-Boaro/Vitrine-atelie.git
-
-2. Acesse a pasta do projeto:
-
-    ```bash
-    cd Vitrine-atelie
-    
-3. Instale as dependências:
-
-    ```bash
-    npm install
-4. Execute o servidor de desenvolvimento:
-
-    ```bash
-    npm run dev
-O servidor iniciará localmente. Acesse a URL indicada no terminal.
